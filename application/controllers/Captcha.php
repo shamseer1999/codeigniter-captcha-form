@@ -12,10 +12,11 @@ class Captcha extends CI_Controller {
 
 	function index()
 	{
+        
 		$this->load->view('captcha');
 	}
 
-	function validate()
+	public function validate()
 	{
 		$captcha_response = trim($this->input->post('g-recaptcha-response'));
 

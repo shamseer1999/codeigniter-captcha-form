@@ -8,6 +8,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
+    
     <div class="container box">
         <br />
         <h2 align="center"><b>How to Implement Google reCaptcha in Codeigniter</b></h2>
@@ -38,7 +39,7 @@
                 <?php
                 }
                 ?>
-                <form method="post" action="">
+                <form method="post" action="<?php echo base_url('captcha/validate')?>">
                     <div class="form-group">
                         <label>First Name</label>
                         <input type="text" name="first_name" class="form-control" />
